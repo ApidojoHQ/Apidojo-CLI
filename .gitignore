@@ -1,0 +1,5 @@
+.byebug_history
+.env
+
+/data/platform/providers.yml
+/data/platform/sandboxes.yml

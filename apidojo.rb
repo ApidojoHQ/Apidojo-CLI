@@ -45,25 +45,25 @@ end
 post '*' do
   response = engine.relay_post(request)
 
-  response.body
+  [response.status, { 'Content-Type' => response.content_type }, response.body]
 end
 
 put '*' do
   response = engine.relay_put(request)
 
-  response.body
+  [response.status, { 'Content-Type' => response.content_type }, response.body]
 end
 
 patch '*' do
   response = engine.relay_patch(request)
 
-  response.body
+  [response.status, { 'Content-Type' => response.content_type }, response.body]
 end
 
 delete '*' do
   response = engine.relay_delete(request)
 
-  response.body
+  [response.status, { 'Content-Type' => response.content_type }, response.body]
 end
 
 # Run with

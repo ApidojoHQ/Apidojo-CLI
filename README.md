@@ -15,9 +15,8 @@ Check that out in the [Foundation articles](https://apidojo.com/articles/foundat
 ## How
 
 1. **Register in the platform** first, [choose your plan](https://apidojo.com/#pricing-content) - there's a 7 and 14 days FREE trials offered depending on the plan you opt, no credit card or payment required.
-2. **Watch the 8 minutes demo video** to understand the basic principles
-3. **Define yourself a few API endpoints** and a **sandbox** to play with
-4. **Install the CLI** and play!
+2. **Define the API endpoints** and a **sandbox** with API endpoints call sequences and scenarios to play with.
+4. **Install the CLI** then **activate specific sequences and scenarios of the sandbox** and play!
 
 ## CLI installation
 
@@ -59,22 +58,28 @@ to load the libraries
 
 ### First handling
 
-At this point you need to configure your CLI in order for it to be able to talk with the platform
+At this point you need to configure your dev CLI in order for it to be able to talk with the platform
 
-1. Grab **USER TOKEN** from the platform [user profile](https://apidojo.com/settings/profile)
+1. Grab **USER TOKEN** from your [user profile](https://apidojo.com/settings/profile) in the platform
 2. Create a `.env` file in the CLI directory, then write `APIDOJO_USER_TOKEN=your-user-token` in that file
 3. Run `rvmsudo thor apidojo:sync` from the command line inside the CLI directory. That will pull API providers and sandbox settings from the platform. You MUST have defined these stuff in order to use the CLI.
 4. Run `thor apidojo:start` to launch the CLI app with a command prompt, type `h` or `help` to know about the available commands.
 
-From that moment when you launched a sandbox with the `sbx` or `sandbox` command, the CLI will spin off a local API server with local URLs (check your `/etc/hosts` file, the `sync` command in step 3 should have write entries there), that will allow you to call them and expect returns in accordance to the scenarios you defined in the platform.
+From that moment when you launched a sandbox with the `sbx` or `sandbox` command, there will be a list to choose, select one by number. The CLI will spin off a local API server with local URLs (check your `/etc/hosts` file, the `sync` command in step 3 should have write entries there), that will allow you to call them and expect returns in accordance to the scenarios you defined in the platform.
 
 That's it, happy API playing!
 
-### Troubleshooting
+## Troubleshooting
 
-Feel free to reach out in the platform built-in support, we will be happy to help.
+Feel free to reach out in the platform built-in support, we will be happy to help and support your onboarding setup.
 
 For anything else, our email is always open [hey@apidojo.com](mailto:hey@apidojo.com)
+
+## Contributions
+
+We openly embrace contributions from the community. This Ruby CLI is just a reference implementation, but the underlying protocol is open to any other type of client, on any platform. 
+
+If you desire to contribute and address a specific need, we'll be happy to help and provide technical guidance, same email at to ping us: [hey@apidojo.com](mailto:hey@apidojo.com)
 
 ## Licence
 

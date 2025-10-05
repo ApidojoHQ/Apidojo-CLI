@@ -4,6 +4,10 @@ That's the idea.
 
 This is the CLI that connects to [Apidojo.com](https://apidojo.com) platform, allowing you to supercharge your personal/team productivity when you *design -> create -> consume -> test* REST APIs.
 
+<img width="1308" height="550" alt="step-3-cli-run" src="https://github.com/user-attachments/assets/e2cd932e-f0b7-496b-9485-2d4bf5e53463" />
+<img width="2505" height="1267" alt="platform-cli" src="https://github.com/user-attachments/assets/b3420c4c-ee71-4899-89c9-c83992425f86" />
+
+
 Quick overview: For any API provider that defines [API endpoints on the platform](https://apidojo.com/api), you will be able to call local URLs in accordance with the [sandboxing rules](https://apidojo.com/sandboxes) you [set up for the CLI](https://apidojo.com/cli).
 
 ## Why?
